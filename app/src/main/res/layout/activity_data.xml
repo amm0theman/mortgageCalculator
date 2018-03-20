@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="@dimen/standard_margin"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year_label2" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignLeft="@+id/data_rate"
+        android:layout_toRightOf="@+id/label_years">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ten"
+            android:id="@+id/ten"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifteen"
+            android:id="@+id/fifteen"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty"
+            android:id="@+id/thirty"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_label2"
+        android:id="@+id/label_amount"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/label_years" />
+
+    <EditText
+        android:id="@+id/data_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_amount"
+        android:layout_alignStart="@+id/button"
+        android:inputType="numberDecimal"
+        android:text="@string/large_amount" />
+
+    <TextView
+        android:id="@+id/label_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_amount"
+        android:layout_marginTop="50dp"
+        android:text="@string/interest_label2" />
+
+    <EditText
+        android:id="@+id/data_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_rate"
+        android:layout_toEndOf="@+id/label_rate"
+        android:inputType="numberDecimal"
+        android:text="@string/interest_dec" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2_label"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/data_rate"
+        android:onClick="goBack"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimension Descriptions -->
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="text_padding">10dip</dimen>
+    <dimen name="button_padding">50dip</dimen>
+</resources>

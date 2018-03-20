@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/standard_margin"
+    tools:context="com.example.ammonriley.mortgagecalculatorv0.MainActivity">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Amount -->
+            <TextView
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/amount_label" />
+
+            <!-- $100000.00 -->
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/amount1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- Years -->
+            <TextView
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/year_label" />
+
+            <!-- 30 -->
+            <TextView
+                android:id="@+id/years"
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/amount2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- Interest Rate -->
+            <TextView
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/interest_label" />
+
+            <!-- 3.5% -->
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="170dp"
+                android:padding="@dimen/text_padding"
+                android:text="@string/amount3" />
+        </TableRow>
+
+        <View
+            android:layout_height="5dip"
+            android:background="@color/red" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Monthly Payment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/text_padding"
+            android:text="@string/monthly_label" />
+
+        <!-- $449.04 -->
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="170dp"
+            android:padding="@dimen/text_padding"
+            android:text="@string/amount4" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Total Payment -->
+        <TextView
+            android:layout_width="170dp"
+            android:padding="@dimen/text_padding"
+            android:text="@string/total_label" />
+
+        <!-- 4161654.66 -->
+        <TextView
+            android:id="@+id/totalPayment"
+            android:layout_width="170dp"
+            android:padding="@dimen/text_padding"
+            android:text="@string/amount5" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/button_padding"
+        android:gravity="center">
+    <Button
+        android:text="@string/modify_label" />
+        <!--android:onClick="modifyData"-->
+
+    </TableRow>
+
+</TableLayout>
